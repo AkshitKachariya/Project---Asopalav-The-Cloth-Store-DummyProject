@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+    .imggallary {
+        @apply w-60 h-40 hover:scale-110 border-4 border-blue-300 duration-300 hover:border-4 hover:border-white;
+    }
+}
+
+@theme {
+    --font-poppins: "Poppins", "sans-serif";
+    --font-twinkl-star: "Twinkle Star", "cursive";
+    --font-edu-vic: "Edu VIC WA NT Hand Pre", "cursive";
+    --font-gfs-didot: "GFS Didot", "serif";
+}
